@@ -54,15 +54,24 @@ def tsp_branch_and_bound(distance_matrix):
 
 if __name__ == "__main__":
     st = time.perf_counter()
-    adj_matrix = np.array([
-        [0, 10, 15, 20],
-        [10, 0, 35, 25],
-        [15, 35, 0, 30],
-        [20, 25, 30, 0]
-    ])
+    n = int(input("enter the number of cities\n"))
+    adj_matrix = np.zeros((n, n))
+    i = 0
+    while i < n:
+        j = 0
+        while j < n:
+            print("distance between", i,"and", j)
+            x = int(input())
+            if x >= 0:
+                adj_matrix[i, j] = x
+                j += 1
+            else:
+                print("INVALID INPUT TRY AGAIN")
+                continue
+        i += 1
 
     best_tour, min_cost = tsp_branch_and_bound(adj_matrix)
     en = time.perf_counter()
     print("Best Tour:", best_tour)
     print("Minimum Cost:", min_cost)
-    print((en - st)*(10**6),"microsecond")
+    print((en - st) * (10 ** 6), "microsecond")
