@@ -1,0 +1,10 @@
+# Facts
+Macbeth killed Duncan.
+Lady Macbeth convinced Macbeth to kill Duncan.
+Banquo was killed by Macbeth's hired murderers.
+Macduff eventually killed Macbeth.
+Macbeth became the king of Scotland.
+
+# Rules
+Macbeth killed Duncan -> Macbeth is guilty of regicide.
+Macduff killed Macbeth -> Macduff is the new hero of Scotland.
